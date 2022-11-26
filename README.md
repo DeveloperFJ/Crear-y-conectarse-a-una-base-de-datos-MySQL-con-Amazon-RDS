@@ -89,7 +89,14 @@ Haga clic en Create database (Crear base de datos).
 
 ![6](https://user-images.githubusercontent.com/112997883/204104809-401f6d2e-f045-4861-be77-dd305c9b9479.png)
 
+_____________________________________________________________________________________________________________________________________________________________________
+f. Se está creando su instancia de base de datos.  Haga clic en View Your DB Instances (Ver sus instancias de base de datos).
 
+Nota: Dependiendo de la clase de la instancia de base de datos y el almacenamiento asignado, la nueva instancia de base de datos podría tardar varios minutos en estar disponible.
 
+   La nueva instancia de base de datos aparece en la lista de instancias de base de datos en la consola de RDS. La instancia de base de datos se encontrará en estado 
+   creating (creándose) hasta que esté creada y lista para utilizar.  Cuando el estado cambie a available (disponible), podrá conectarse a una base de datos de la 
+   instancia de base de datos. 
 
+Si lo desea, puede pasar al siguiente paso mientras espera a que la instancia de base de datos esté disponible.![7](https://user-images.githubusercontent.com/112997883/204109375-a0ee8d9c-1ef4-44e3-83f8-486e880de1d7.png)
 
