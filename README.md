@@ -90,6 +90,7 @@ Haga clic en Create database (Crear base de datos).
 ![6](https://user-images.githubusercontent.com/112997883/204104809-401f6d2e-f045-4861-be77-dd305c9b9479.png)
 
 _____________________________________________________________________________________________________________________________________________________________________
+
 f. Se está creando su instancia de base de datos.  Haga clic en View Your DB Instances (Ver sus instancias de base de datos).
 
 Nota: Dependiendo de la clase de la instancia de base de datos y el almacenamiento asignado, la nueva instancia de base de datos podría tardar varios minutos en estar disponible.
@@ -99,7 +100,7 @@ Nota: Dependiendo de la clase de la instancia de base de datos y el almacenamien
    instancia de base de datos. 
 
 Si lo desea, puede pasar al siguiente paso mientras espera a que la instancia de base de datos esté disponible.![7](https://user-images.githubusercontent.com/112997883/204109375-a0ee8d9c-1ef4-44e3-83f8-486e880de1d7.png)
-_____________________________________________________________________________________________________________________________________________________________________.
+_____________________________________________________________________________________________________________________________________________________________________
 
 Paso 2: Descargar un cliente SQL
 Una vez que se haya creado la instancia de base de datos y se encuentre en estado "available", puede conectarse a una base de datos de la instancia de base de datos con cualquier cliente SQL estándar. En este paso, descargaremos MySQL Workbench, que es un cliente SQL popular.
@@ -108,16 +109,19 @@ a. Vaya a la página de Download MySQL Workbench (Descargar MySQL Workbench) par
 
 Nota: Recuerde ejecutar MySQL Workbench en el mismo dispositivo con el que ha creado la instancia de base de datos. El grupo de seguridad en el que se encuentra su base de datos está configurado para permitir solamente la conexión del dispositivo en el que ha creado la instancia de base de datos.
 ![8](https://user-images.githubusercontent.com/112997883/205104154-5079dd9c-0443-4024-83ee-5a1f839f3add.png)
-_____________________________________________________________________________________________________________________________________________________________________.
+_____________________________________________________________________________________________________________________________________________________________________
+
 
 b. Se le preguntará si desea iniciar sesión, registrarse o comenzar la descarga.  Puede hacer clic en No thanks, just start my download  (No, gracias, comenzar la descarga) para realizar la descarga con rapidez.
 ![9](https://user-images.githubusercontent.com/112997883/205104479-37e3f598-5495-494b-a0dc-0eba20a15842.png)
 _____________________________________________________________________________________________________________________________________________________________________
 
+
 Paso 3: Conectarse a la base de datos MySQL
 En este paso, nos conectaremos a la base de datos que ha creado con MySQL Workbench.
 
 _____________________________________________________________________________________________________________________________________________________________________
+
 
 a. Inicie la aplicación MySQL Workbench y vaya a Database > Connect to Database (Base de datos > Conectar con base de datos) (Ctrl+U) desde la barra de menú.
 
@@ -132,6 +136,7 @@ Username (Nombre de usuario): escriba el nombre de usuario que ha creado para la
 Password (Contraseña): haga clic en Store in Vault (o Store in Keychain en MacOS) e introduzca la contraseña que usó al crear la base de datos de Amazon RDS.
 Haga clic en OK.
 ![11](https://user-images.githubusercontent.com/112997883/205105053-524fa600-8391-4e4a-8218-1db6950ddf03.png)
+
 _____________________________________________________________________________________________________________________________________________________________________
 
 c. ¡Ya se ha conectado a la base de datos! En MySQL Workbench, verá varios objetos de esquema disponibles en la base de datos. Ya puede comenzar a crear tablas, introducir datos y realizar consultas.
