@@ -99,4 +99,55 @@ Nota: Dependiendo de la clase de la instancia de base de datos y el almacenamien
    instancia de base de datos. 
 
 Si lo desea, puede pasar al siguiente paso mientras espera a que la instancia de base de datos esté disponible.![7](https://user-images.githubusercontent.com/112997883/204109375-a0ee8d9c-1ef4-44e3-83f8-486e880de1d7.png)
+_____________________________________________________________________________________________________________________________________________________________________.
 
+Paso 2: Descargar un cliente SQL
+Una vez que se haya creado la instancia de base de datos y se encuentre en estado "available", puede conectarse a una base de datos de la instancia de base de datos con cualquier cliente SQL estándar. En este paso, descargaremos MySQL Workbench, que es un cliente SQL popular.
+
+a. Vaya a la página de Download MySQL Workbench (Descargar MySQL Workbench) para descargar e instalar MySQL Workbench. Para obtener más información sobre el uso de MySQL, consulte la documentación de MySQL.
+
+Nota: Recuerde ejecutar MySQL Workbench en el mismo dispositivo con el que ha creado la instancia de base de datos. El grupo de seguridad en el que se encuentra su base de datos está configurado para permitir solamente la conexión del dispositivo en el que ha creado la instancia de base de datos.
+![8](https://user-images.githubusercontent.com/112997883/205104154-5079dd9c-0443-4024-83ee-5a1f839f3add.png)
+_____________________________________________________________________________________________________________________________________________________________________.
+
+b. Se le preguntará si desea iniciar sesión, registrarse o comenzar la descarga.  Puede hacer clic en No thanks, just start my download  (No, gracias, comenzar la descarga) para realizar la descarga con rapidez.
+![9](https://user-images.githubusercontent.com/112997883/205104479-37e3f598-5495-494b-a0dc-0eba20a15842.png)
+_____________________________________________________________________________________________________________________________________________________________________
+
+Paso 3: Conectarse a la base de datos MySQL
+En este paso, nos conectaremos a la base de datos que ha creado con MySQL Workbench.
+
+_____________________________________________________________________________________________________________________________________________________________________
+
+a. Inicie la aplicación MySQL Workbench y vaya a Database > Connect to Database (Base de datos > Conectar con base de datos) (Ctrl+U) desde la barra de menú.
+
+![10](https://user-images.githubusercontent.com/112997883/205104872-bcadf8db-401f-4942-b68c-4b52def1ba30.png)
+_____________________________________________________________________________________________________________________________________________________________________
+
+b. Aparecerá un cuadro de diálogo.  Escriba lo siguiente:
+
+Hostname (Nombre de host): puede encontrar su nombre de host en la consola de Amazon RDS, tal y como se muestra en la imagen de la derecha.  
+Port (Puerto): el valor predeterminado debería ser 3306.
+Username (Nombre de usuario): escriba el nombre de usuario que ha creado para la base de datos de Amazon RDS.  En este tutorial, es “masterUsername“.
+Password (Contraseña): haga clic en Store in Vault (o Store in Keychain en MacOS) e introduzca la contraseña que usó al crear la base de datos de Amazon RDS.
+Haga clic en OK.
+![11](https://user-images.githubusercontent.com/112997883/205105053-524fa600-8391-4e4a-8218-1db6950ddf03.png)
+_____________________________________________________________________________________________________________________________________________________________________
+
+c. ¡Ya se ha conectado a la base de datos! En MySQL Workbench, verá varios objetos de esquema disponibles en la base de datos. Ya puede comenzar a crear tablas, introducir datos y realizar consultas.
+_____________________________________________________________________________________________________________________________________________________________________
+
+Paso 4: Eliminar la instancia de base de datos
+Puede eliminar con facilidad la instancia de base de datos MySQL desde la consola de Amazon RDS. Se recomienda eliminar las instancias que ya no utilice para que no le sigan cobrando por ellas.
+_____________________________________________________________________________________________________________________________________________________________________
+a. Vuelva a la consola de Amazon RDS. Seleccione Databases (Base de datos), elija la instancia que desee eliminar y luego seleccione Delete (Eliminar) en el menú desplegable Actions (Acciones).
+![13](https://user-images.githubusercontent.com/112997883/205105497-77d6233b-94d6-40f6-b3c1-9c601390882c.png)
+_____________________________________________________________________________________________________________________________________________________________________
+b. Deberá crear una captura de imagen final y confirmar la eliminación. En nuestro ejemplo, no cree una captura de imagen final, confirme que desea eliminar la instancia y luego haga clic en Delete. 
+
+    Nota: La eliminación de la instancia de base de datos puede tardar unos minutos.
+    
+![14](https://user-images.githubusercontent.com/112997883/205105742-63fd9bcf-17ba-4b7f-9a32-b9abb025abcf.png)
+_____________________________________________________________________________________________________________________________________________________________________
+¡Felicitaciones!
+Ha creado una instancia de base de datos MySQL, se ha conectado a ella y la ha eliminado con Amazon RDS.  Amazon RDS facilita las tareas de configuración, utilización y escalado de bases de datos relacionales en la nube. Proporciona capacidad rentable y de tamaño modificable y, al mismo tiempo, se encarga de las tediosas tareas de administración de la base de datos, lo que le permite centrarse en sus aplicaciones y en su negocio.
